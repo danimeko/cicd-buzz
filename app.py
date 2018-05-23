@@ -11,7 +11,7 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 def generate_buzz():
     page = '<html><body>The page is updated<br><h1>'
     page += generator.generate_buzz()
-    page += '</h1></body></html>'
+    page += '</h1><hr>Im the best footer</body></html>'
     return page
 
 if __name__ == "__main__":
