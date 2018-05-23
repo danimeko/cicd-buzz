@@ -9,9 +9,9 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 
 @app.route("/")
 def generate_buzz():
-    page = '<html><body>The page is updated<br><h1>'
+    page = '<html><body style="background-image: url("https://vignette.wikia.nocookie.net/prodigy-math-game/images/0/0e/Community-header-background/revision/latest/scale-to-width-down/640?cb=20180106055623");">CI/CD Assignment three<br><h1>'
     page += generator.generate_buzz()
-    page += '</h1><hr>Im the best footer</body></html>'
+    page += '</h1><hr>the best footer ever</body></html>'
     return page
 
 if __name__ == "__main__":
